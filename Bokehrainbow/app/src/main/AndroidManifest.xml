@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bokehrainbow">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/bokeh"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <service android:label="@string/bokeh"
+            android:name=".BokehRainbowWallpaper"
+            android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService"/>
+            </intent-filter>
+            <meta-data android:name="android.service.wallpaper"
+                android:resource="@xml/bokeh"/>
+        </service>
+
+    </application>
+
+    <uses-feature android:name="android.software.live_wallpaper"/>
+
+</manifest>

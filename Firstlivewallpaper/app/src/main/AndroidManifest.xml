@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.firstlivewallpaper">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/first"
+        android:label="@string/android_label"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <service android:label="@string/service_android_label"
+            android:name=".BigDotWallpaper"
+            android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService"/>
+            </intent-filter>
+            <meta-data android:name="android.service.wallpaper"
+                android:resource="@xml/first"/>
+        </service>
+
+    </application>
+
+
+    <uses-feature android:name="android.software.live_wallpaper"/>
+
+</manifest>

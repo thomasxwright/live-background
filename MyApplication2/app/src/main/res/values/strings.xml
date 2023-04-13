@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- General -->
+    <skip />
+    <!-- Application name -->
+    <string name="wallpapers">wallpapers</string>
+
+    <!-- Wallpaper showing Bokeh -->
+    <string name="first_wallpaper">first wallpaper</string>
+
+    <string name="wallpaper_android_desc">wallpaper > android:desc=</string>
+
+    <string name="app_name">First live wallpaper</string>
+
+
+    <string name="service_android_label">service > android:label=</string>
+
+    <string name="service_metadata_android_resource">service > metadata > android:resource=</string>
+
+    <string name="android_label">android:label=</string>
+</resources>
